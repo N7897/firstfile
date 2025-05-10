@@ -4,11 +4,11 @@ import time
 import json
 import os
 
-# --- 設定項目 ---
+
 NEWS_API_KEY = os.environ.get("NEWS_API_KEY", "4058108a85e2413d8b10e3043ef0f7cc")
 NEWS_API_ENDPOINT = "https://newsapi.org/v2/everything"
 
-# --- 関数定義 ---
+
 
 def fetch_news(keywords, num_articles=5):
     """指定されたキーワードでNewsAPIから記事を取得する"""
@@ -77,7 +77,7 @@ def run_pomodoro(work_minutes=25, break_minutes=5):
     except KeyboardInterrupt:
         print("\nPomodoro timer interrupted.")
 
-# --- メイン処理 ---
+
 def main():
     parser = argparse.ArgumentParser(description="Smart Study Session Helper - Fetches news and runs a Pomodoro timer.")
     parser.add_argument("keywords", type=str, help="Keywords to search for news articles.")
