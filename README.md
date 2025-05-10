@@ -5,7 +5,7 @@ import json
 import os
 
 
-NEWS_API_KEY = os.environ.get("NEWS_API_KEY", "4058108a85e2413d8b10e3043ef0f7cc")
+NEWS_API_KEY = os.environ.get("NEWS_API_KEY", "#コード")
 NEWS_API_ENDPOINT = "https://newsapi.org/v2/everything"
 
 
